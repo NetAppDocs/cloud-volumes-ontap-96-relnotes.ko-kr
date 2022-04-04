@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-gcp.html 
+keywords: google, gcp, google cloud platform, explore, standard, premium, byol, paygo, disks, supported, capacity, machine types, sizes 
+summary: 'Cloud Volumes ONTAP는 Google 클라우드 플랫폼에서 단일 노드 시스템으로 제공됩니다. 2가지 가격 옵션, 즉 Pay As Your Go 및 Bring Your Own License(BYOL)를 사용할 수 있습니다.' 
+---
+= Google Cloud에서 지원되는 구성
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP는 Google 클라우드 플랫폼에서 단일 노드 시스템으로 제공됩니다. 사용한 만큼만 지불하는 BYOL(Bring Your Own License)이라는 두 가지 가격 옵션을 사용할 수 있습니다.
+
+
+
+== 용량제 개요
+
+* Explore, Standard 및 Premium의 세 가지 라이센스 옵션으로 Cloud Volumes ONTAP를 제공합니다.
+* Google Cloud에 배포한 첫 번째 Cloud Volumes ONTAP 시스템에 대해 30일 무료 평가판을 사용할 수 있습니다.
++
+** 시간 단위 소프트웨어 비용은 없지만, Google Cloud 인프라 비용(컴퓨팅, 스토리지, 네트워킹)은 여전히 적용됩니다.
+** 무료 평가판이 종료되면 선택한 라이센스에 따라 매시간 요금이 부과됩니다. https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager["구독한 경우"^]. 가입하지 않은 경우 시스템이 종료됩니다.
+
+
+* PAYGO에서 BYOL로 변환하는 기능은 현재 지원되지 않습니다.
+* 기본 기술 지원이 제공되지만 시스템에 연결된 NetApp 일련 번호를 등록하고 활성화해야 합니다.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html["Cloud Manager에서 용량제 시스템을 등록하십시오"^]
+
+
+
+
+
+== BYOL 개요
+
+* 12개월, 24개월 등과 같은 기간 기반의 구독 옵션을 제공하는 단일 노드 라이센스
+* 서브스크립션 기간 동안 지원이 포함됩니다.
+* Cloud Volumes ONTAP BYOL 시스템에 여러 개의 라이센스를 구매하여 368TB 이상의 용량을 할당할 수 있습니다.
++
+예를 들어, 2개의 라이센스를 구입하여 최대 736TB의 용량을 Cloud Volumes ONTAP에 할당할 수 있습니다. 또는 4개의 라이센스를 구입하여 최대 1.4개의 PiB를 구입할 수 있습니다.
+
+
+
+
+
+== 라이센스에 의해 지원되는 구성
+
+Cloud Volumes ONTAP는 Google 클라우드 플랫폼에서 단일 노드 시스템으로 제공됩니다.
+
+[cols="h,d,d,d,d"]
+|===
+|  | 탐색 | 표준 | 프리미엄 | BYOL 
+
+
+| 지원되는 시스템 유형 ^1^ | 사용자 지정 - 4-16384 | N1-표준-8 | N1-표준-32  a| 
+* 사용자 지정 - 4-16384
+* N1-표준-8
+* N1-표준-32
+
+
+
+
+| 지원되는 디스크 유형 ^2^ 4+| 영역 영구 디스크(SSD 및 표준) 
+
+
+| 오브젝트 스토리지에 콜드 데이터 계층화 | 지원되지 않습니다 3+| 지원 
+
+
+| 최대 시스템 용량(디스크 + 오브젝트 스토리지) | 2TB입니다 | 10TB | 368TB^3^ | 라이센스당 368TB^3^ 
+|===
+참고:
+
+. 사용자 지정 시스템 유형에는 vCPU 4개와 16GB 메모리가 있습니다. 표준 장비 유형에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/machine-types#standard_machine_types["Google Cloud 설명서: 머신 유형"^].
+. SSD를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.
+. 디스크 제한에서는 디스크만 사용하여 368TB의 용량 제한에 도달하지 못합니다. 에서 368TB의 용량 제한에 도달할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^].
++
+link:reference-limits-gcp.html["Google Cloud의 디스크 제한에 대해 자세히 알아보십시오"].
+
+. Google Cloud Platform 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+
+
+
+
+== 지원되는 디스크 크기입니다
+
+Google Cloud에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 지원되는 디스크 크기는 다음과 같습니다.
+
+* 100GB
+* 500GB
+* 1TB
+* 2TB입니다
+* 4TB
+* 8TB
+* 16TB
+

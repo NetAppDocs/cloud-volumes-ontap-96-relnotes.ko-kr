@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations-azure.html 
+keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, nfsv3 
+summary: 이러한 알려진 제한은 Microsoft Azure의 Cloud Volumes ONTAP에만 적용됩니다. 
+---
+= Azure의 알려진 제한 사항
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Microsoft Azure의 Cloud Volumes ONTAP에는 다음과 같은 알려진 제한 사항이 있습니다. 또한 반드시 검토하십시오 link:reference-limitations.html["모든 클라우드 공급자의 제한"].
+
+
+
+== 새 배포는 지원되지 않습니다
+
+Cloud Volumes ONTAP 9.6의 새로운 배포는 더 이상 Azure에서 지원되지 않습니다. Cloud Volumes ONTAP 9.7을 구축해야 합니다.
+
+
+
+== HA 제한 사항
+
+Microsoft Azure의 Cloud Volumes ONTAP HA 쌍에는 다음과 같은 제한이 있습니다.
+
+* NFSv4는 지원되지 않습니다. NFSv3이 지원됩니다.
+* 일부 지역에서는 HA 쌍이 지원되지 않습니다.
++
+https://cloud.netapp.com/cloud-volumes-global-regions["지원되는 Azure 지역 목록을 참조하십시오"^].
+
+
+
+
+
+== CSP 파트너는 선불 종량제(Pay-as-you-go)을 사용할 수 없습니다
+
+Microsoft 클라우드 솔루션 공급자(CSP) 파트너인 경우 CSP 파트너는 선불 종량제 구독을 사용할 수 없으므로 Cloud Volumes ONTAP Explore, Standard 또는 Premium을 배포할 수 없습니다. 라이센스를 구입하고 Cloud Volumes ONTAP BYOL을 구축해야 합니다.

@@ -1,0 +1,173 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-azure.html 
+keywords: vm, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations, disks, sizes 
+summary: Cloud Volumes ONTAP는 PAYGO 및 BYOL 구성에서 Azure에서 사용 가능 PAYGO의 경우 Explore, Standard 또는 Premium 중에서 선택할 수 있습니다. 
+---
+= Azure에서 지원되는 구성
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP는 Azure에서 BYOL(pay-as-you-go and Bring Your Own License)의 두 가지 가격 옵션으로 제공됩니다. 용량제 구성의 경우, Explore, Standard 또는 Premium의 3가지 구성 중에서 선택할 수 있습니다.
+
+
+
+== 라이센스에 의해 지원되는 구성
+
+Cloud Volumes ONTAP는 Azure에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 지원하는 고가용성(HA) 노드 쌍으로 제공됩니다.
+
+단일 노드 시스템을 HA 쌍으로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 쌍 간에 전환하려면 새 시스템을 구축하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.
+
+
+
+=== 단일 노드 시스템
+
+Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 다음 구성 중에서 선택할 수 있습니다.
+
+[cols="h,d,d,d,d"]
+|===
+|  | 탐색 | 표준 | 프리미엄 | BYOL 
+
+
+| 지원되는 가상 머신 유형입니다 | DS3_v2  a| 
+* DS4_v2
+* DS13_v2
+
+ a| 
+* DS5_v2
+* DS14_v2
+* DS15_v2
+
+ a| 
+* DS3_v2
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+* DS15_v2
+
+
+
+
+| 지원되는 디스크 유형 ^1^ 4+| 표준 HDD 관리 디스크, 표준 SSD 관리 디스크 및 프리미엄 SSD 관리 디스크 
+
+
+| Blob 스토리지로 콜드 데이터 계층화 | 지원되지 않습니다 3+| 지원 
+
+
+| 최대 시스템 용량(디스크 + 오브젝트 스토리지) | 2TiB | 10TiB | 368TiB | 라이센스당 368TiB입니다 
+|===
+참고:
+
+. SSD를 사용할 때는 쓰기 성능이 향상되지만 DS3_v2 가상 머신 유형을 사용할 때는 성능이 향상되지 않습니다.
+. Azure 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+
+
+
+
+=== HA 쌍
+
+Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 중에서 선택할 수 있습니다.
+
+[cols="h,d,d,d,d"]
+|===
+|  | 탐색 | 표준 | 프리미엄 | BYOL 
+
+
+| 지원되는 가상 머신 유형입니다 | 지원되지 않습니다  a| 
+* DS4_v2
+* DS13_v2
+
+ a| 
+* DS5_v2
+* DS14_v2
+* DS15_v2
+
+ a| 
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+* DS15_v2
+
+
+
+
+| 지원되는 디스크 유형입니다 | 지원되지 않습니다 3+| 프리미엄 페이지 Blob 
+
+
+| Blob 저장소에 콜드 데이터 계층화^2^ | 지원되지 않습니다 3+| 지원 
+
+
+| 최대 시스템 용량(디스크 + 오브젝트 스토리지) | 지원되지 않습니다 | 10TiB | 368TiB | 라이센스당 368TiB입니다 
+|===
+참고:
+
+. Azure 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+
+
+
+
+== 지원되는 디스크 크기입니다
+
+Azure에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 12개까지 포함할 수 있습니다.
+
+
+
+=== 단일 노드 시스템
+
+단일 노드 시스템은 Azure 관리 디스크를 사용합니다. 지원되는 디스크 크기는 다음과 같습니다.
+
+[cols="3*"]
+|===
+| Premium SSD를 사용합니다 | Standard SSD를 참조하십시오 | 표준 HDD 
+
+
+ a| 
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 8TiB
+* 16TiB
+* 32TiB
+
+ a| 
+* 100GiB
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 8TiB
+* 16TiB
+* 32TiB
+
+ a| 
+* 100GiB
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 8TiB
+* 16TiB
+* 32TiB
+
+
+|===
+
+
+=== HA 쌍
+
+HA 쌍에서는 프리미엄 페이지 Blob을 사용합니다. 지원되는 디스크 크기는 다음과 같습니다.
+
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 8TiB
+
