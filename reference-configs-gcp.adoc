@@ -6,6 +6,7 @@ summary: 'Cloud Volumes ONTAP는 Google 클라우드 플랫폼에서 단일 노�
 ---
 = Google Cloud에서 지원되는 구성
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

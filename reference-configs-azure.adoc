@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP는 PAYGO 및 BYOL 구성에서 Azure에서 사용 �
 ---
 = Azure에서 지원되는 구성
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
