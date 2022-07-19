@@ -306,7 +306,7 @@
   <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf.png" width="16" height="16"/>사용 가능한 PDF<span>
+    <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf.png" alt="" width="16" height="16"/>사용 가능한 PDF<span>
     </span>
   </a>
 </div>
@@ -316,7 +316,7 @@
         
         
         <a target="_blank" href="/ko-kr/cloud-volumes-ontap-96-relnotes/pdfs/fullsite-sidebar/Cloud_Volumes_ONTAP_9_6_릴리스_정보.pdf" >
-          <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf.png" width="16" height="16"/>이 문서 사이트의 PDF</a>
+          <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf.png" alt="" width="16" height="16"/>이 문서 사이트의 PDF</a>
 
 
 
@@ -333,7 +333,7 @@
               href="/ko-kr/cloud-volumes-ontap-96-relnotes/pdfs/sidebar/지원되는_구성.pdf" 
             
           >
-            <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf.png" alt="" width="16" height="16"/>
             지원되는 구성
           </a>
           
@@ -343,8 +343,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -364,7 +362,7 @@
               href="/ko-kr/cloud-volumes-ontap-96-relnotes/pdfs/sidebar/보관_제한.pdf" 
             
           >
-            <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf.png" alt="" width="16" height="16"/>
             보관 제한
           </a>
           
@@ -374,8 +372,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -397,7 +393,7 @@
               href="/ko-kr/cloud-volumes-ontap-96-relnotes/pdfs/sidebar/알려진_제한_사항.pdf" 
             
           >
-            <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf.png" alt="" width="16" height="16"/>
             알려진 제한 사항
           </a>
           
@@ -409,8 +405,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -419,11 +413,10 @@
 
 
 
-
 </li></ul>
   <div class="zip-pdf-link-container" style="display: none;">   
     <a href="#" id="zipPdf">
-      <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf-zip.png" width="16" height="16"/>
+      <img src="/ko-kr/cloud-volumes-ontap-96-relnotes/images/pdf-zip.png" alt="" width="16" height="16"/>
       <pre>별도의 PDF 문서 모음<span class="zip-size"></span></pre>
     </a><div id="zip-link-popup" class="hide">
     <div class="inner-modal">
@@ -571,6 +564,8 @@
   data-did-you-mean="{suggestion}을(를) 검색해보십시오." 
   data-no-results-found-did-you-mean="{query}에 대한 결과를 찾을 수 없습니다. {suggestion}을(를) 검색하려 하셨습니까?" 
   data-results-found="{hitCount}개의 결과를 찾음"
+  data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+  data-error-reset="Reset Search"
   data-sk-es-pf-indexes=""
   data-flavor=""></div>
   <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
@@ -729,6 +724,7 @@
     <script src='/ko-kr/cloud-volumes-ontap-96-relnotes/js/tabbed-blocks.js'></script>
     <script src='/ko-kr/cloud-volumes-ontap-96-relnotes/js/sidebar.js'></script>
   </body><script>
+    /*
       if(hasParameter(window.location.search,'q')) {
         var queryString = decodeURI(getParameter(window.location.search, 'q'));
         document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
@@ -751,4 +747,5 @@
         param = param || "";
         return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
       }
+      */
   </script></html>
