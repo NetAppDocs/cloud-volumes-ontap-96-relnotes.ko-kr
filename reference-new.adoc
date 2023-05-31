@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.6에는 몇 가지 새로운 기능과 향상된 
 [role="lead"]
 Cloud Volumes ONTAP 9.6에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.
 
-최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager 릴리즈 노트"^] 를 참조하십시오.
+최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Manager 릴리즈 노트"^] 를 참조하십시오.
 
 
 
@@ -53,7 +53,7 @@ NetApp은 새로운 EC2 인스턴스에 대한 지원과 지원되는 데이터 
 * m5d.8xLarge^1,2^
 
 
-^1^ 이러한 인스턴스 유형에는 Cloud Volumes ONTAP이 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["자세한 정보"^].
+^1^ 이러한 인스턴스 유형에는 Cloud Volumes ONTAP이 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["자세한 정보"^].
 
 ^2^ 이러한 인스턴스 유형은 9.6 P3 이상에서 지원됩니다.
 
@@ -120,7 +120,7 @@ https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-m
 
 BYOL(Google Cloud Platform)로 기존 라이센스를 도입할 때 Cloud Volumes ONTAP를 Google Cloud Platform에서 사용할 수 있습니다. 선불 종량제 프로모션도 사용할 수 있습니다. 이 프로모션은 무제한 수의 시스템에 대해 무료 라이센스를 제공하며 2019년 9월 말에 만료됩니다.
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Google Cloud를 시작하는 방법을 알아보십시오"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-gcp.html["Google Cloud를 시작하는 방법을 알아보십시오"^]
 * link:reference-configs-gcp.html["지원되는 구성을 봅니다"]
 
 
@@ -167,7 +167,7 @@ Cloud Volumes ONTAP는 Google Cloud에서 단일 노드 시스템으로 제공�
 
 이제 Microsoft Azure의 Cloud Volumes ONTAP HA 쌍에서 데이터 계층화가 지원됩니다. 데이터 계층화를 통해 비활성 데이터를 저비용 Blob 스토리지로 자동 계층화할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Cloud Manager에서 데이터 계층화를 설정하는 방법에 대해 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["Cloud Manager에서 데이터 계층화를 설정하는 방법에 대해 알아보십시오"^].
 
 
 

@@ -93,7 +93,7 @@ Cloud Volumes ONTAP는 AWS에서 단일 노드 시스템으로, 내결함성 및
 . c5d.18xLarge 및 m5d.8xLarge는 Cloud Volumes ONTAP 9.6 P3부터 지원됩니다.
 . Cloud Volumes ONTAP Standard, Premium 및 BYOL에서 SSD를 사용할 경우 향상된 쓰기 성능 제공
 . GP3 SSD는 지원되지 않습니다.
-. 일부 HA 구성의 경우 디스크 제한으로 인해 디스크만 사용하여 368TiB 용량 제한에 도달하지 못합니다. 이 경우 의 용량 제한은 368TiB에 도달할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 link:reference-limits-aws.html["보관 제한"].
+. 일부 HA 구성의 경우 디스크 제한으로 인해 디스크만 사용하여 368TiB 용량 제한에 도달하지 못합니다. 이 경우 의 용량 제한은 368TiB에 도달할 수 있습니다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 link:reference-limits-aws.html["보관 제한"].
 . AWS 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
 
 

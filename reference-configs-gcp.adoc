@@ -30,7 +30,7 @@ Cloud Volumes ONTAP는 Google 클라우드 플랫폼에서 단일 노드 시스�
 * PAYGO에서 BYOL로 변환하는 기능은 현재 지원되지 않습니다.
 * 기본 기술 지원이 제공되지만 시스템에 연결된 NetApp 일련 번호를 등록하고 활성화해야 합니다.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html["Cloud Manager에서 용량제 시스템을 등록하십시오"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-registering.html["Cloud Manager에서 용량제 시스템을 등록하십시오"^]
 
 
 
@@ -77,7 +77,7 @@ Cloud Volumes ONTAP는 Google 클라우드 플랫폼에서 단일 노드 시스�
 
 . 사용자 지정 시스템 유형에는 vCPU 4개와 16GB 메모리가 있습니다. 표준 장비 유형에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/machine-types#standard_machine_types["Google Cloud 설명서: 머신 유형"^].
 . SSD를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.
-. 디스크 제한에서는 디스크만 사용하여 368TB의 용량 제한에 도달하지 못합니다. 에서 368TB의 용량 제한에 도달할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^].
+. 디스크 제한에서는 디스크만 사용하여 368TB의 용량 제한에 도달하지 못합니다. 에서 368TB의 용량 제한에 도달할 수 있습니다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^].
 +
 link:reference-limits-gcp.html["Google Cloud의 디스크 제한에 대해 자세히 알아보십시오"].
 
