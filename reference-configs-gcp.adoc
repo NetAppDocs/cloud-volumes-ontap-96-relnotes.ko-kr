@@ -81,7 +81,7 @@ Cloud Volumes ONTAP는 Google 클라우드 플랫폼에서 단일 노드 시스�
 +
 link:reference-limits-gcp.html["Google Cloud의 디스크 제한에 대해 자세히 알아보십시오"].
 
-. Google Cloud Platform 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+. Google Cloud Platform 지역 지원은 을 참조하십시오 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
 
 
 

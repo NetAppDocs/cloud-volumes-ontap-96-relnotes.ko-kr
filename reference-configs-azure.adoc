@@ -66,7 +66,7 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 참고:
 
 . SSD를 사용할 때는 쓰기 성능이 향상되지만 DS3_v2 가상 머신 유형을 사용할 때는 성능이 향상되지 않습니다.
-. Azure 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+. Azure 지역 지원에 대해서는 을 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^]참조하십시오.
 
 
 
@@ -109,7 +109,7 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 |===
 참고:
 
-. Azure 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+. Azure 지역 지원에 대해서는 을 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^]참조하십시오.
 
 
 
